@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:responsive/Navbar/Navbar.dart';
 
 void main() {
   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -28,13 +28,13 @@ class MyHomePage extends StatelessWidget {
             begin: Alignment.centerLeft,
             end: Alignment.centerRight,
             colors: [
-              Color.fromRGBO(195, 20, 50, 1.0),
-              Color.fromRGBO(36, 11, 54, 1.0)
+              Color(0xff05AAE3),
+              Color.fromRGBO(2, 73, 96, 1.0)
             ]
           ),
         ),
         child: Column(children: <Widget>[
-
+          Navbar()
         ],
         )
       ),

@@ -16,3 +16,43 @@ class Navbar extends StatelessWidget {
     );
   }
 }
+
+class DesktopNavbar extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: Row(children: <Widget>[
+        Text("Oppkey: Managers of Online Communities",
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            color: Colors.white,
+            fontSize: 30
+          ),
+        ),
+        Row(children: <Widget>[
+          Text("Home", 
+          style: TextStyle(color:Colors.white),
+          ),
+          Text("Portfolio", 
+          style: TextStyle(color:Colors.white),
+          ),
+          Text("Services", 
+          style: TextStyle(color:Colors.white),
+          ),
+
+        ],)
+      ],
+      ),
+    );
+  }
+}
+
+
+class MobileNavbar extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      
+    );
+  }
+}
