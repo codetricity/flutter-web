@@ -17,3 +17,8 @@ using VS Code.
 ## Assets and Fonts
 
 * Rubik https://fonts.google.com/specimen/Rubik
+
+Image https://icons8.com/ouch/illustration/flame-success
+
+Artist: [Thierry Fousse](https://dribbble.com/thierryfousse)
+
