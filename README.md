@@ -1,7 +1,7 @@
 # Flutter Web Example for Oppkey
 
-Demonstration of Flutter Web for evaluation of new Oppkey site. To
-create this site, I'm using Flutter, not HTML, CSS, or JavaScript. This means that
+Demonstration of Flutter Web for evaluation of new Oppkey site. 
+This site is built with Flutter, not HTML, CSS, or JavaScript. 
 I didn't use templates like Bootstrap.
 
 Responsive changes between desktop and mobile are handled with Flutter.
@@ -30,6 +30,8 @@ Responsive changes between desktop and mobile are handled with Flutter.
 * [Flutter action](https://github.com/marketplace/actions/flutter-action) on GitHub marketplace
 * [Configuring GitHub actions](https://help.github.com/en/actions/configuring-and-managing-workflows/configuring-a-workflow) - official GitHub documentation
 * [GitHub Actions blog post from Aug 8, 2019](https://github.blog/2019-08-08-github-actions-now-supports-ci-cd/)
+
+![GitHub Actions](doc/images/github-actions.png)
 
 
 ## Assets and Fonts
