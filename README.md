@@ -24,11 +24,12 @@ Responsive changes between desktop and mobile are handled with Flutter.
 * [responsive_grid](https://pub.dev/packages/responsive_grid#-readme-tab-)
 * [Medium article using above](https://medium.com/flutter-community/build-your-responsive-flutter-layout-like-a-pro-6bf86aaed81e)
 
-## GitHub Pages Actions
+## GitHub Actions
 
 * [GitHub Actions for Flutter Web and GitHub Pages](https://medium.com/flutter-community/flutter-web-github-actions-github-pages-dec8f308542a) by Onat Cipli
 * [Flutter action](https://github.com/marketplace/actions/flutter-action) on GitHub marketplace
 * [Configuring GitHub actions](https://help.github.com/en/actions/configuring-and-managing-workflows/configuring-a-workflow) - official GitHub documentation
+* [GitHub Actions blog post from Aug 8, 2019](https://github.blog/2019-08-08-github-actions-now-supports-ci-cd/)
 
 
 ## Assets and Fonts
