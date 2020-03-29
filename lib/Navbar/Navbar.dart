@@ -5,9 +5,7 @@ class Navbar extends StatelessWidget {
   Widget build(BuildContext context) {
     return LayoutBuilder(
       builder: (context, constraints) {
-        if (constraints.maxWidth > 1200) {
-          return DesktopNavbar();
-        } else if (constraints.maxWidth > 800 && constraints.maxWidth < 1200) {
+        if (constraints.maxWidth > 1000) {
           return DesktopNavbar();
         } else {
           return MobileNavbar();
@@ -23,7 +21,7 @@ class DesktopNavbar extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 40),
       child: Container(
-        constraints: BoxConstraints(maxWidth: 1200),
+        // constraints: BoxConstraints(maxWidth: 1200),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
