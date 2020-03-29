@@ -26,7 +26,10 @@ Responsive changes between desktop and mobile are handled with Flutter.
 
 ## GitHub Pages Actions
 
-https://medium.com/flutter-community/flutter-web-github-actions-github-pages-dec8f308542a
+* [GitHub Actions for Flutter Web and GitHub Pages](https://medium.com/flutter-community/flutter-web-github-actions-github-pages-dec8f308542a) by Onat Cipli
+* [Flutter action](https://github.com/marketplace/actions/flutter-action) on GitHub marketplace
+* [Configuring GitHub actions](https://help.github.com/en/actions/configuring-and-managing-workflows/configuring-a-workflow) - official GitHub documentation
+
 
 ## Assets and Fonts
 
