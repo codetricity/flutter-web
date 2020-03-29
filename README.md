@@ -1,9 +1,7 @@
-# responsive
+# Flutter Web Example for Oppkey
 
+Demonstration of Flutter Web for evaluation of new Oppkey site.
 
-https://youtu.be/rpkKYQCioW0
-
-using VS Code.
 
 ## Flutter web reference
 
@@ -14,6 +12,10 @@ using VS Code.
 * [responsive_grid](https://pub.dev/packages/responsive_grid#-readme-tab-)
 * [Medium article using above](https://medium.com/flutter-community/build-your-responsive-flutter-layout-like-a-pro-6bf86aaed81e)
 
+## GitHub Pages Actions
+
+https://medium.com/flutter-community/flutter-web-github-actions-github-pages-dec8f308542a
+
 ## Assets and Fonts
 
 * Rubik https://fonts.google.com/specimen/Rubik
@@ -22,3 +24,8 @@ Image https://icons8.com/ouch/illustration/flame-success
 
 Artist: [Thierry Fousse](https://dribbble.com/thierryfousse)
 
+## References
+
+using VS Code.
+
+https://youtu.be/rpkKYQCioW0
