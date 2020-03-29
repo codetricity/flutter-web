@@ -1,6 +1,14 @@
 # Flutter Web Example for Oppkey
 
-Demonstration of Flutter Web for evaluation of new Oppkey site.
+Demonstration of Flutter Web for evaluation of new Oppkey site. To
+create this site, I'm using Flutter, not HTML, CSS, or JavaScript. This means that
+I didn't use templates like Bootstrap.
+
+Responsive changes between desktop and mobile are handled with Flutter.
+
+## Desktop
+
+![desktop view](doc/images/desktop.png)
 
 
 ## Flutter web reference
