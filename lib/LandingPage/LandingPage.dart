@@ -43,8 +43,11 @@ class LandingPage extends StatelessWidget {
           ],
         ),
       ),
-      Image.asset("assets/images/flame_success.png",
-      width: width,),
+      Padding(
+        padding: const EdgeInsets.symmetric(vertical: 20.0),
+        child: Image.asset("assets/images/flame_success.png",
+        width: width,),
+      ),
     ];
   }
 
