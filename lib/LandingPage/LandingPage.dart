@@ -1,9 +1,11 @@
 import 'package:flutter/widgets.dart';
 import 'package:flutter/material.dart';
+import 'package:responsive/Demo/Demo.dart';
+
 
 class LandingPage extends StatelessWidget {
 
-  List<Widget> pageChildren(double width) {
+  List<Widget> pageChildren(double width, BuildContext context) {
     return <Widget> [
       Container(
         width: width,
@@ -32,7 +34,12 @@ class LandingPage extends StatelessWidget {
                     Radius.circular(20.0),
                     ),
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Demo()),
+                    );    
+
+                  },
                   child: Padding(
                     padding: const EdgeInsets.symmetric(vertical: 20.0, horizontal: 40.0),
                     child: Text("Request Demo",
@@ -58,10 +65,10 @@ class LandingPage extends StatelessWidget {
         if (constraints.maxWidth > 1000) {
           return  Row(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: pageChildren(constraints.biggest.width/2),);          
+            children: pageChildren(constraints.biggest.width/2, context),);          
         } else {
           return Column(
-            children: pageChildren(constraints.biggest.width),
+            children: pageChildren(constraints.biggest.width, context),
           );
         }
       }

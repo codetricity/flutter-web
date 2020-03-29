@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:responsive/Services/Services.dart';
+import 'package:responsive/About/About.dart';
+import 'package:responsive/Portfolio/Portfolio.dart';
 
 class Navbar extends StatelessWidget {
   @override
@@ -38,18 +41,44 @@ class DesktopNavbar extends StatelessWidget {
             ),
             SizedBox(width: 30,),
 
-            Text("Portfolio", 
-            style: TextStyle(color:Colors.white),
+            // Portfolio
+            FlatButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Portfolio()),
+                );                
+              },
+              focusColor: Color(0xffF04D22),
+              child: Text("Portfolio", 
+              style: TextStyle(color:Colors.white),
+              ),
             ),
             SizedBox(width: 30,),
-            Text("About", 
-            style: TextStyle(color:Colors.white),
+            
+            // About
+            FlatButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => About()),
+                );                
+              },
+              child: Text("About", 
+              style: TextStyle(color: Colors.white),
+              ),
+              focusColor: Color(0xffF04D22),
             ),
             SizedBox(width: 30,),
             MaterialButton(
               color: Colors.lightBlue,
               shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20.0))),
-              onPressed: (){},
+              onPressed: (){
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Services()),
+                );
+              },
               child: Text("Services",
               style: TextStyle(color: Colors.white),),
             )
@@ -85,18 +114,49 @@ class MobileNavbar extends StatelessWidget {
             ),
             SizedBox(width: 30,),
 
-            Text("Portfolio", 
-            style: TextStyle(color:Colors.white),
+            // Portfolio
+            FlatButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Portfolio()),
+                );
+              },
+              child: Text("Portfolio", 
+              style: TextStyle(color:Colors.white),
+              ),
+              focusColor: Color(0xffF04D22),
             ),
             SizedBox(width: 30,),
-            Text("About", 
-            style: TextStyle(color:Colors.white),
+
+
+            // About
+            FlatButton(
+              onPressed: () {
+               Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => About()),
+                );
+              },
+              child: Text("About", 
+              style: TextStyle(color:Colors.white),
+              ),
+              focusColor: Color(0xffF04D22),
             ),
+
+            // spacing between row elements
             SizedBox(width: 30,),
+
+            // Services
             MaterialButton(
               color: Colors.lightBlue,
               shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20.0))),
-              onPressed: (){},
+              onPressed: (){
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Services()),
+                );
+              },
               child: Text("Services",
               style: TextStyle(color: Colors.white),),
             )
