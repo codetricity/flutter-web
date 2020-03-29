@@ -10,6 +10,10 @@ Responsive changes between desktop and mobile are handled with Flutter.
 
 ![desktop view](doc/images/desktop.png)
 
+## Mobile
+
+![mobile view](doc/images/mobile.png)
+
 
 ## Flutter web reference
 
