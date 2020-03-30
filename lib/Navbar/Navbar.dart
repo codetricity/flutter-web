@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:responsive/Services/Services.dart';
 import 'package:responsive/About/About.dart';
 import 'package:responsive/Portfolio/Portfolio.dart';
+import 'package:responsive/Navbar/GoBack/GoBack.dart';
 
 class Navbar extends StatelessWidget {
   @override
@@ -28,7 +29,7 @@ class DesktopNavbar extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
-          Text("Oppkey \nOnline Community Experts",
+          Text("Oppkey \nCommunity Experts",
             style: TextStyle(
               fontWeight: FontWeight.bold,
               color: Colors.white,
@@ -36,26 +37,9 @@ class DesktopNavbar extends StatelessWidget {
             ),
           ),
           Row(children: <Widget>[
-            Text("Home", 
-            style: TextStyle(color:Colors.white),
-            ),
-            SizedBox(width: 30,),
+            // GoBack(),
+            // SizedBox(width: 30,),
 
-            // Portfolio
-            FlatButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => Portfolio()),
-                );                
-              },
-              focusColor: Color(0xffF04D22),
-              child: Text("Portfolio", 
-              style: TextStyle(color:Colors.white),
-              ),
-            ),
-            SizedBox(width: 30,),
-            
             // About
             FlatButton(
               onPressed: () {
@@ -70,16 +54,33 @@ class DesktopNavbar extends StatelessWidget {
               focusColor: Color(0xffF04D22),
             ),
             SizedBox(width: 30,),
-            MaterialButton(
-              color: Colors.lightBlue,
-              shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20.0))),
+
+            // Portfolio
+            FlatButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Portfolio()),
+                );                
+              },
+              focusColor: Color(0xffF04D22),
+              child: Text("Case Studies", 
+              style: TextStyle(color:Colors.white),
+              ),
+            ),
+            
+
+
+
+            SizedBox(width: 30,),
+            FlatButton(
               onPressed: (){
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => Services()),
                 );
               },
-              child: Text("Services",
+              child: Text("Products",
               style: TextStyle(color: Colors.white),),
             )
 
@@ -99,7 +100,7 @@ class MobileNavbar extends StatelessWidget {
       padding: EdgeInsets.symmetric(vertical: 20, horizontal: 40 ),
       child: Column(
         children: <Widget>[
-          Text("Oppkey \nOnline Community Experts",
+          Text("Oppkey \nCommunity Experts",
             style: TextStyle(
               fontWeight: FontWeight.bold,
               color: Colors.white,
@@ -109,26 +110,6 @@ class MobileNavbar extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-            Text("Home", 
-            style: TextStyle(color:Colors.white),
-            ),
-            SizedBox(width: 30,),
-
-            // Portfolio
-            FlatButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => Portfolio()),
-                );
-              },
-              child: Text("Portfolio", 
-              style: TextStyle(color:Colors.white),
-              ),
-              focusColor: Color(0xffF04D22),
-            ),
-            SizedBox(width: 30,),
-
 
             // About
             FlatButton(
@@ -145,19 +126,34 @@ class MobileNavbar extends StatelessWidget {
             ),
 
             // spacing between row elements
-            SizedBox(width: 30,),
+            SizedBox(width: 10,),
+
+            // Portfolio
+            FlatButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Portfolio()),
+                );
+              },
+              child: Text("Case Studies", 
+              style: TextStyle(color:Colors.white),
+              ),
+              focusColor: Color(0xffF04D22),
+            ),
+            SizedBox(width: 10,),
+
+
 
             // Services
-            MaterialButton(
-              color: Colors.lightBlue,
-              shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20.0))),
+            FlatButton(
               onPressed: (){
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => Services()),
                 );
               },
-              child: Text("Services",
+              child: Text("Products",
               style: TextStyle(color: Colors.white),),
             )
 

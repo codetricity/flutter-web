@@ -12,7 +12,7 @@ class LandingPage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            Text("Expand Your \nProduct Trust",
+            Text("Build Trust",
             style: TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 40.0,
@@ -21,7 +21,7 @@ class LandingPage extends StatelessWidget {
                 padding: const EdgeInsets.symmetric(vertical: 20.0),
                 child: Text("Strengthen relationships with hundreds of "
                 "thought leaders by working with " 
-                "staff, customers, partners, and evangelists using our scalable platform.",
+                "employees, customers, partners, and evangelists using our scalable platform.",
                 style: TextStyle(
                   fontSize: 16.0,
                   color: Colors.white
