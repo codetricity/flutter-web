@@ -46,6 +46,8 @@ flutter:
     - assets/images/flame_success.png
     - assets/images/target.png
     - assets/images/send.png
+    - assets/images/hero.png    
+    - assets/images/demo.png    
 
     # - images/a_dot_ham.jpeg
 
