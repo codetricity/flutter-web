@@ -5,13 +5,7 @@ import 'package:responsive/Demo/Demo.dart';
 class AboutPage extends StatelessWidget {
   List<Widget> pageChildren(double width, BuildContext context) {
     return <Widget>[
-      Padding(
-        padding: const EdgeInsets.symmetric(vertical: 20.0),
-        child: Image.asset(
-          "assets/images/target.png",
-          width: width,
-        ),
-      ),
+
       Container(
         width: width,
         child: Column(
@@ -90,6 +84,13 @@ class AboutPage extends StatelessWidget {
                   ),
                 ),
           ],
+        ),
+      ),
+            Padding(
+        padding: const EdgeInsets.symmetric(vertical: 20.0),
+        child: Image.asset(
+          "assets/images/target.png",
+          width: width,
         ),
       ),
     ];
