@@ -21,7 +21,7 @@ class LandingPage extends StatelessWidget {
                 padding: const EdgeInsets.symmetric(vertical: 20.0),
                 child: Text("Strengthen relationships with hundreds of "
                 "thought leaders by working with " 
-                "employees, customers, partners, and evangelists using our scalable platform.",
+                "your employees, customers, partners, and evangelists using our scalable platform.",
                 style: TextStyle(
                   fontSize: 16.0,
                   color: Colors.white
