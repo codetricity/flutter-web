@@ -12,7 +12,7 @@ class AboutPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Text(
-              "Embrace Change",
+              "Better than Marketing",
               style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 40.0,
@@ -23,7 +23,7 @@ class AboutPage extends StatelessWidget {
               child: Column(
                 children: <Widget>[
                   Text(
-                    "Oppkey's marketing strategy",
+                    "Apply the brainpower of a 1000 advocates",
                     style: TextStyle(fontSize: 16.0, color: Colors.white),
                   ),
                   Text("How you can benefit from changes to PR and marketing.",
