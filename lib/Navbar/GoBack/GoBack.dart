@@ -7,11 +7,15 @@ class GoBack extends StatelessWidget {
       builder: (context, constraints) {
         return FlatButton(
           onPressed: () {
-            Navigator.pop(context);             
+            Navigator.pop(context);
             print('go home');
           },
-          child: Text('Back'),
-          );
+          child: Text(
+            'Back',
+            style: TextStyle(color: Colors.white),
+          ),
+          focusColor: Color(0xffF04D22),
+        );
       },
     );
   }

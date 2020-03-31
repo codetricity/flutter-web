@@ -36,11 +36,12 @@ class DesktopNavbar extends StatelessWidget {
             ),
           ),
           Row(children: <Widget>[
-            // GoBack(),
-            // SizedBox(width: 30,),
+            GoBack(),
+            SizedBox(width: 30,),
 
+            
             // About
-            FlatButton(
+            /* FlatButton(
               onPressed: () {
                 Navigator.push(
                   context,
@@ -52,10 +53,10 @@ class DesktopNavbar extends StatelessWidget {
               ),
               focusColor: Color(0xffF04D22),
             ),
-            SizedBox(width: 30,),
+            SizedBox(width: 30,), */
 
             // Case Studies
-            FlatButton(
+            /* FlatButton(
               onPressed: () {
                 Navigator.push(
                   context,
@@ -66,7 +67,7 @@ class DesktopNavbar extends StatelessWidget {
               child: Text("Case Studies", 
               style: TextStyle(color:Colors.white),
               ),
-            ),
+            ), */
             
 
           ],)
@@ -95,9 +96,11 @@ class MobileNavbar extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
+            GoBack(),
+            SizedBox(width: 30,),
 
             // About
-            FlatButton(
+ /*             FlatButton(
               onPressed: () {
                Navigator.push(
                   context,
@@ -126,7 +129,7 @@ class MobileNavbar extends StatelessWidget {
               ),
               focusColor: Color(0xffF04D22),
             ),
-            SizedBox(width: 10,),
+            SizedBox(width: 10,), */
 
           ],),
         ],
