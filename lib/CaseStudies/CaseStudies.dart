@@ -1,7 +1,7 @@
 import 'package:flutter/widgets.dart';
 import 'package:flutter/material.dart';
 
-class Services extends StatelessWidget {
+class CaseStudies extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return LayoutBuilder(
@@ -14,7 +14,7 @@ class Services extends StatelessWidget {
                 Navigator.pop(context);
               },
               ),
-            Text("Services"),
+            Text("Case Studies"),
           ],
         );
       },

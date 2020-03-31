@@ -1,7 +1,7 @@
 import 'package:flutter/widgets.dart';
 import 'package:flutter/material.dart';
 
-class Portfolio extends StatelessWidget {
+class Products extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return LayoutBuilder(
@@ -14,7 +14,7 @@ class Portfolio extends StatelessWidget {
                 Navigator.pop(context);
               },
               ),
-            Text("Portfolio"),
+            Text("Products"),
           ],
         );
       },

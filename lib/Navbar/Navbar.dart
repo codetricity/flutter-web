@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:responsive/Services/Services.dart';
+import 'package:responsive/Products/Products.dart';
 import 'package:responsive/About/About.dart';
-import 'package:responsive/Portfolio/Portfolio.dart';
+import 'package:responsive/CaseStudies/CaseStudies.dart';
 import 'package:responsive/Navbar/GoBack/GoBack.dart';
 
 class Navbar extends StatelessWidget {
@@ -55,12 +55,12 @@ class DesktopNavbar extends StatelessWidget {
             ),
             SizedBox(width: 30,),
 
-            // Portfolio
+            // Case Studies
             FlatButton(
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => Portfolio()),
+                  MaterialPageRoute(builder: (context) => CaseStudies()),
                 );                
               },
               focusColor: Color(0xffF04D22),
@@ -77,7 +77,7 @@ class DesktopNavbar extends StatelessWidget {
               onPressed: (){
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => Services()),
+                  MaterialPageRoute(builder: (context) => Products()),
                 );
               },
               child: Text("Products",
@@ -128,12 +128,12 @@ class MobileNavbar extends StatelessWidget {
             // spacing between row elements
             SizedBox(width: 10,),
 
-            // Portfolio
+            // Case Studies
             FlatButton(
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => Portfolio()),
+                  MaterialPageRoute(builder: (context) => CaseStudies()),
                 );
               },
               child: Text("Case Studies", 
@@ -145,12 +145,12 @@ class MobileNavbar extends StatelessWidget {
 
 
 
-            // Services
+            // Products
             FlatButton(
               onPressed: (){
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => Services()),
+                  MaterialPageRoute(builder: (context) => Products()),
                 );
               },
               child: Text("Products",
