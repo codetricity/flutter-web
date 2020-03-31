@@ -20,12 +20,17 @@ class ProductPage extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 20.0),
                 child: Text("Workflow manage software for marketing campaigns."
-                "Community and event management services.",
+                "Community and event management services."
+                "Workflow Management"
+                "Community Promotion",
                 style: TextStyle(
                   fontSize: 16.0,
                   color: Colors.white
                 ),),
               ),
+
+
+              //products
               MaterialButton(
                 color: Colors.white,
                 shape: RoundedRectangleBorder(
@@ -37,21 +42,44 @@ class ProductPage extends StatelessWidget {
                     Navigator.push(context,
                       MaterialPageRoute(builder: (context) => Demo()),
                     );    
-
                   },
                   child: Padding(
                     padding: const EdgeInsets.symmetric(vertical: 20.0, horizontal: 40.0),
-                    child: Text("Request Demo",
-                    style: TextStyle(color: Colors.red),
+                    child: Text("Products",
+                    style: TextStyle(color: Colors.orange),
                     ),
                   ),
               ),
+
+              SizedBox(height: 10,),
+
+              // services
+              MaterialButton(
+                color: Colors.white,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.all(
+                    Radius.circular(20.0),
+                    ),
+                  ),
+                  onPressed: () {
+                    Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Demo()),
+                    );    
+                  },
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 20.0, horizontal: 40.0),
+                    child: Text("Services",
+                    style: TextStyle(color: Colors.blue),
+                    ),
+                  ),
+              ),
+
           ],
         ),
       ),
       Padding(
         padding: const EdgeInsets.symmetric(vertical: 20.0),
-        child: Image.asset("assets/images/flame_success.png",
+        child: Image.asset("assets/images/target.png",
         width: width,),
       ),
     ];
