@@ -25,43 +25,17 @@ class DemoPage extends StatelessWidget {
                 children: <Widget>[
                   Text(
                     "Free advice to solve your new marketing problems.",
-                    style: TextStyle(fontSize: 16.0, color: Colors.white),
+                    style: TextStyle(fontSize: 20.0, color: Colors.white),
                   ),
                   Text("Software and services that can help you reach your goals.",
-                    style: TextStyle(fontSize: 16.0, color: Colors.white),
+                    style: TextStyle(fontSize: 20.0, color: Colors.white),
                   ),
                 ],
               ),
             ),
-           
-                //products
+            Text('email: info@oppkey.com',
+            style: TextStyle(color: Colors.white, fontSize: 20)),
 
-                MaterialButton(
-                  color: Colors.white,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.all(
-                      Radius.circular(20.0),
-                    ),
-                  ),
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => Demo()),
-                    );
-                  },
-                  child: Padding(
-                    padding: const EdgeInsets.symmetric(
-                        vertical: 20.0, horizontal: 40.0),
-                    child: Text(
-                      "Schedule Demo",
-                      style: TextStyle(color: Colors.orange),
-                    ),
-                  ),
-                ),
-                SizedBox(
-                  height: 10,
-                ),
-                // services
           ],
         ),
       ),
