@@ -47,7 +47,7 @@ class AboutPage extends StatelessWidget {
                   child: Column(
                     children: <Widget>[
                       Icon(
-                        Icons.people,
+                        Icons.face,
                         size: 128,
                         color: Colors.white,
                         ),
@@ -68,29 +68,32 @@ class AboutPage extends StatelessWidget {
                 ),
 
 
-                // services
-                MaterialButton(
-                  color: Colors.white,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.all(
-                      Radius.circular(20.0),
-                    ),
+                // learn more
+                InkWell(
+                  onTap: () {
+                    String externalUrl =
+                      'http://oppkey.com';
+
+                    js.context.callMethod("open", [externalUrl]);
+                 },                                  
+                  child: Column(
+                    children: <Widget>[
+                      Icon(
+                        Icons.poll,
+                        size: 128,
+                        color: Colors.white,
+                        ),
+                      Text('Learn More',
+                      
+                        style: TextStyle(
+                          fontSize: 32,
+                          color: Colors.white,
+                        ),
+                      ),
+                    ],
                   ),
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => Demo()),
-                    );
-                  },
-                  child: Padding(
-                    padding: const EdgeInsets.symmetric(
-                        vertical: 20.0, horizontal: 40.0),
-                    child: Text(
-                      "Learn More",
-                      style: TextStyle(color: Colors.blue),
-                    ),
-                  ),
-                ),
+                ), 
+
           ],
         ),
       ),
