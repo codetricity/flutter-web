@@ -1,6 +1,8 @@
 import 'package:flutter/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive/Demo/Demo.dart';
+import 'dart:html' as html;
+import 'dart:js' as js;
 
 class AboutPage extends StatelessWidget {
   List<Widget> pageChildren(double width, BuildContext context) {
@@ -23,7 +25,7 @@ class AboutPage extends StatelessWidget {
               child: Column(
                 children: <Widget>[
                   Text(
-                    "Apply the brainpower of a 1000 advocates",
+                    "Apply the brainpower of 1000 advocates",
                     style: TextStyle(fontSize: 16.0, color: Colors.white),
                   ),
                   Text("How you can benefit from changes to PR and marketing.",
@@ -35,31 +37,37 @@ class AboutPage extends StatelessWidget {
            
                 //products
 
-                MaterialButton(
-                  color: Colors.white,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.all(
-                      Radius.circular(20.0),
-                    ),
-                  ),
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => Demo()),
-                    );
-                  },
-                  child: Padding(
-                    padding: const EdgeInsets.symmetric(
-                        vertical: 20.0, horizontal: 40.0),
-                    child: Text(
-                      "People",
-                      style: TextStyle(color: Colors.orange),
-                    ),
+                InkWell(
+                  onTap: () {
+                    String externalUrl =
+                      'http://oppkey.com';
+
+                    js.context.callMethod("open", [externalUrl]);
+                 },                                  
+                  child: Column(
+                    children: <Widget>[
+                      Icon(
+                        Icons.people,
+                        size: 128,
+                        color: Colors.white,
+                        ),
+                      Text('people',
+                      
+                        style: TextStyle(
+                          fontSize: 32,
+                          color: Colors.white,
+                        ),
+                      ),
+                    ],
                   ),
                 ),
+
+
                 SizedBox(
-                  height: 10,
+                  height: 30,
                 ),
+
+
                 // services
                 MaterialButton(
                   color: Colors.white,
