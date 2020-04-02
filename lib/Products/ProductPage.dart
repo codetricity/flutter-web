@@ -1,17 +1,14 @@
 import 'package:flutter/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive/Demo/Demo.dart';
+import 'dart:html' as html;
+import 'dart:js' as js;
+
 
 class ProductPage extends StatelessWidget {
   List<Widget> pageChildren(double width, BuildContext context) {
     return <Widget>[
-      Padding(
-        padding: const EdgeInsets.symmetric(vertical: 20.0),
-        child: Image.asset(
-          "assets/images/target.png",
-          width: width,
-        ),
-      ),
+
       Container(
         width: width,
         child: Column(
@@ -38,58 +35,65 @@ class ProductPage extends StatelessWidget {
                 ],
               ),
             ),
-           
-                //products
+            InkWell(
+              onTap: () {
+                String externalUrl =
+                    'https://brain.oppkey.com/content/products/';
 
-                MaterialButton(
-                  color: Colors.white,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.all(
-                      Radius.circular(20.0),
+                js.context.callMethod("open", [externalUrl]);
+              },
+              child: Column(
+                children: <Widget>[
+                  Icon(
+                    Icons.domain,
+                    size: 128,
+                    color: Colors.white,
+                  ),
+                  Text('Products',
+
+                    style: TextStyle(
+                      fontSize: 32,
+                      color: Colors.white,
                     ),
                   ),
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => Demo()),
-                    );
-                  },
-                  child: Padding(
-                    padding: const EdgeInsets.symmetric(
-                        vertical: 20.0, horizontal: 40.0),
-                    child: Text(
-                      "Products",
-                      style: TextStyle(color: Colors.orange),
+                ],
+              ),
+            ),
+            InkWell(
+              onTap: () {
+                String externalUrl =
+                    'https://brain.oppkey.com/content/services/';
+
+                js.context.callMethod("open", [externalUrl]);
+              },
+              child: Column(
+                children: <Widget>[
+                  Icon(
+                    Icons.pages,
+                    size: 128,
+                    color: Colors.white,
+                  ),
+                  Text('Services',
+
+                    style: TextStyle(
+                      fontSize: 32,
+                      color: Colors.white,
                     ),
                   ),
-                ),
-                SizedBox(
-                  height: 10,
-                ),
-                // services
-                MaterialButton(
-                  color: Colors.white,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.all(
-                      Radius.circular(20.0),
-                    ),
-                  ),
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => Demo()),
-                    );
-                  },
-                  child: Padding(
-                    padding: const EdgeInsets.symmetric(
-                        vertical: 20.0, horizontal: 40.0),
-                    child: Text(
-                      "Services",
-                      style: TextStyle(color: Colors.blue),
-                    ),
-                  ),
-                ),
+                ],
+              ),
+            ),
           ],
+        ),
+      ),
+
+      // start of main graphic
+
+      Padding(
+        padding: const EdgeInsets.symmetric(vertical: 20.0),
+        child: Image.asset(
+          "assets/images/target.png",
+          width: width,
         ),
       ),
     ];

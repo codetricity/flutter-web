@@ -1,6 +1,8 @@
 import 'package:flutter/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive/Demo/Demo.dart';
+import 'dart:html' as html;
+import 'dart:js' as js;
 
 class CaseStudiesPage extends StatelessWidget {
   List<Widget> pageChildren(double width, BuildContext context) {
@@ -23,7 +25,7 @@ class CaseStudiesPage extends StatelessWidget {
               child: Column(
                 children: <Widget>[
                   Text(
-                    "Case Studies",
+                    "Stories of heroic results.",
                     style: TextStyle(fontSize: 16.0, color: Colors.white),
                   ),
                   Text("Increase registrations. Increase traffic. Engage. Create.",
@@ -32,57 +34,31 @@ class CaseStudiesPage extends StatelessWidget {
                 ],
               ),
             ),
-           
-                //products
 
-                MaterialButton(
-                  color: Colors.white,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.all(
-                      Radius.circular(20.0),
+            InkWell(
+              onTap: () {
+                String externalUrl =
+                    'https://brain.oppkey.com/content/casestudies/';
+
+                js.context.callMethod("open", [externalUrl]);
+              },
+              child: Column(
+                children: <Widget>[
+                  Icon(
+                    Icons.account_box,
+                    size: 128,
+                    color: Colors.white,
+                  ),
+                  Text('Case Studies',
+
+                    style: TextStyle(
+                      fontSize: 32,
+                      color: Colors.white,
                     ),
                   ),
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => Demo()),
-                    );
-                  },
-                  child: Padding(
-                    padding: const EdgeInsets.symmetric(
-                        vertical: 20.0, horizontal: 40.0),
-                    child: Text(
-                      "Case Study 1",
-                      style: TextStyle(color: Colors.orange),
-                    ),
-                  ),
-                ),
-                SizedBox(
-                  height: 10,
-                ),
-                // services
-                MaterialButton(
-                  color: Colors.white,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.all(
-                      Radius.circular(20.0),
-                    ),
-                  ),
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => Demo()),
-                    );
-                  },
-                  child: Padding(
-                    padding: const EdgeInsets.symmetric(
-                        vertical: 20.0, horizontal: 40.0),
-                    child: Text(
-                      "Case Study 2",
-                      style: TextStyle(color: Colors.blue),
-                    ),
-                  ),
-                ),
+                ],
+              ),
+            ),
           ],
         ),
       ),
