@@ -40,7 +40,7 @@ class AboutPage extends StatelessWidget {
                 InkWell(
                   onTap: () {
                     String externalUrl =
-                      'http://oppkey.com';
+                      'https://brain.oppkey.com/content/people/';
 
                     js.context.callMethod("open", [externalUrl]);
                  },                                  
@@ -72,7 +72,7 @@ class AboutPage extends StatelessWidget {
                 InkWell(
                   onTap: () {
                     String externalUrl =
-                      'http://oppkey.com';
+                      'https://brain.oppkey.com/content/info/';
 
                     js.context.callMethod("open", [externalUrl]);
                  },                                  
