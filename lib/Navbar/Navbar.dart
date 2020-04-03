@@ -29,11 +29,11 @@ class DesktopNavbar extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
-          Text("Oppkey \nCommunity Experts",
+          Text("Oppkey Community Experts",
             style: TextStyle(
               fontWeight: FontWeight.bold,
               color: Colors.white,
-              fontSize: 30
+              fontSize: 50
             ),
           ),
           Row(children: <Widget>[
@@ -100,11 +100,11 @@ class MobileNavbar extends StatelessWidget {
       padding: EdgeInsets.symmetric(vertical: 20, horizontal: 40 ),
       child: Column(
         children: <Widget>[
-          Text("Oppkey \nCommunity Experts",
+          Text("Oppkey Community Experts",
             style: TextStyle(
               fontWeight: FontWeight.bold,
               color: Colors.white,
-              fontSize: 30
+              fontSize: 50
             ),
           ),
           Row(
