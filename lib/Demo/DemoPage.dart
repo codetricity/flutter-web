@@ -23,12 +23,22 @@ class DemoPage extends StatelessWidget {
               padding: const EdgeInsets.symmetric(vertical: 20.0),
               child: Column(
                 children: <Widget>[
-                  Text(
-                    "Free advice to solve your new marketing problems.",
-                    style: TextStyle(fontSize: 32.0, color: Colors.white),
+                  Align(
+                    alignment: Alignment.centerLeft,
+                    child: Container(
+                      child: Text(
+                        "Free advice to solve your new marketing problems.",
+                        style: TextStyle(fontSize: 32.0, color: Colors.white),
+                      ),
+                    ),
                   ),
-                  Text("Software and services that can help you reach your goals.",
-                    style: TextStyle(fontSize: 32.0, color: Colors.white),
+                  Align(
+                    alignment: Alignment.centerLeft,
+                    child: Container(
+                      child: Text("Software and services that can help you reach your goals.",
+                        style: TextStyle(fontSize: 32.0, color: Colors.white),
+                      ),
+                    ),
                   ),
                 ],
               ),
