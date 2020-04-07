@@ -42,7 +42,7 @@ class ProductPage extends StatelessWidget {
               child: Column(
                 children: <Widget>[
 
-                  Image.asset('assets/images/product.png',
+                  Image.asset('assets/images/captain.png',
                   width: 100,),
                   Text('Products',
 
@@ -63,11 +63,8 @@ class ProductPage extends StatelessWidget {
               },
               child: Column(
                 children: <Widget>[
-                  Icon(
-                    Icons.pages,
-                    size: 128,
-                    color: Colors.white,
-                  ),
+                  Image.asset('assets/images/captain.png',
+                  width: 100,),
                   Text('Services',
 
                     style: TextStyle(
