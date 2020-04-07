@@ -44,11 +44,9 @@ class ProductPage extends StatelessWidget {
               },
               child: Column(
                 children: <Widget>[
-                  Icon(
-                    Icons.domain,
-                    size: 128,
-                    color: Colors.white,
-                  ),
+
+                  Image.asset('assets/images/product.png',
+                  width: 100,),
                   Text('Products',
 
                     style: TextStyle(
