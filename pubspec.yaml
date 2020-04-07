@@ -47,7 +47,8 @@ flutter:
     - assets/images/target.png
     - assets/images/send.png
     - assets/images/hero.png    
-    - assets/images/demo.png    
+    - assets/images/demo.png
+    - assets/images/main/hands.png
 
     # - images/a_dot_ham.jpeg
 
