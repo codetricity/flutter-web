@@ -12,7 +12,7 @@ class LandingPage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            Text("Build Trust in Product Communities",
+            Text("Build Strong Communities",
             style: TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 40.0,
