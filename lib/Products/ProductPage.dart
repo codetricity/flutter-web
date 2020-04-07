@@ -42,7 +42,7 @@ class ProductPage extends StatelessWidget {
               child: Column(
                 children: <Widget>[
 
-                  Image.asset('assets/images/captain.png',
+                  Image.asset('assets/images/product.png',
                   width: 100,),
                   Text('Products',
 
