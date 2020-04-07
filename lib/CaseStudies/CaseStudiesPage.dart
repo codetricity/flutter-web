@@ -24,13 +24,15 @@ class CaseStudiesPage extends StatelessWidget {
               padding: const EdgeInsets.symmetric(vertical: 20.0),
               child: Column(
                 children: <Widget>[
-                  Text(
-                    "Stories of heroic results.",
+                  Align(
+                    alignment: Alignment.centerLeft,
+                    child: Container(
+                      child: Text(
+                    "Stories of heroic results. Increase registrations. Increase traffic.",
                     style: TextStyle(fontSize: 32.0, color: Colors.white),
                   ),
-                  Text("Increase registrations. Increase traffic. Engage. Create.",
-                    style: TextStyle(fontSize: 32.0, color: Colors.white),
-                  ),
+                ),
+              ),
                 ],
               ),
             ),

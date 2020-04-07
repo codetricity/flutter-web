@@ -25,10 +25,7 @@ class AboutPage extends StatelessWidget {
               child: Column(
                 children: <Widget>[
                   Text(
-                    "Apply the brainpower of 1000 advocates",
-                    style: TextStyle(fontSize: 32.0, color: Colors.white),
-                  ),
-                  Text("How you can benefit from changes to PR and marketing.",
+                    "Learn how you can benefit from changes to PR and marketing. Apply the brainpower of hundreds of advocates.",
                     style: TextStyle(fontSize: 32.0, color: Colors.white),
                   ),
                 ],
@@ -51,7 +48,7 @@ class AboutPage extends StatelessWidget {
                         size: 128,
                         color: Colors.white,
                         ),
-                      Text('people',
+                      Text('People',
                       
                         style: TextStyle(
                           fontSize: 32,
@@ -83,7 +80,7 @@ class AboutPage extends StatelessWidget {
                         size: 128,
                         color: Colors.white,
                         ),
-                      Text('Learn More',
+                      Text('More',
                       
                         style: TextStyle(
                           fontSize: 32,

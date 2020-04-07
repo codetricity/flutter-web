@@ -43,7 +43,10 @@ class LandingPage extends StatelessWidget {
                   child: Padding(
                     padding: const EdgeInsets.symmetric(vertical: 20.0, horizontal: 40.0),
                     child: Text("Request Demo",
-                    style: TextStyle(color: Colors.red),
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 24.0,
+                      color: Colors.orange),
                     ),
                   ),
               ),
