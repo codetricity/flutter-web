@@ -25,15 +25,15 @@ class DemoPage extends StatelessWidget {
                 children: <Widget>[
                   Text(
                     "Free advice to solve your new marketing problems.",
-                    style: TextStyle(fontSize: 20.0, color: Colors.white),
+                    style: TextStyle(fontSize: 32.0, color: Colors.white),
                   ),
                   Text("Software and services that can help you reach your goals.",
-                    style: TextStyle(fontSize: 20.0, color: Colors.white),
+                    style: TextStyle(fontSize: 32.0, color: Colors.white),
                   ),
                 ],
               ),
             ),
-            Text('email: info@oppkey.com',
+            Text('info@oppkey.com',
             style: TextStyle(color: Colors.white, fontSize: 20)),
 
           ],
