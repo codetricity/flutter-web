@@ -37423,7 +37423,7 @@ C.e.G(1/0,q,p)
 return T.b2(s.ct(t,a),C.v)}}}
 K.uD.prototype={
 ct:function(a,b){var t=null,s=new P.aV(20,20),r=u.p
-return H.a([M.bV(t,T.b2(H.a([L.aH("Build Strong Communities",A.ar(t,t,C.i,t,t,t,t,t,t,t,t,40,t,C.D,t,t,!0,t,t,t,t,t,t)),new T.aQ(C.ar,L.aH("Strengthen relationships with hundreds of thought leaders by working with your employees, customers, partners, and evangelists using our scalable platform.",A.ar(t,t,C.i,t,t,t,t,t,t,t,t,16,t,t,t,t,!0,t,t,t,t,t,t)),t),B.Zp(!1,new T.aQ(C.ae,L.aH("Request Demo",A.ar(t,t,C.uD,t,t,t,t,t,t,t,t,24,t,C.D,t,t,!0,t,t,t,t,t,t)),t),C.ap,C.i,t,t,t,t,t,t,t,t,t,t,t,new K.Hk(b),t,new X.bL(C.o,new K.bs(s,s,s,s)),t,t,t,t)],r),C.b7),t,t,t,t,t,a),new T.aQ(C.ar,U.nb("assets/images/flame_success.png",a),t)],r)},
+return H.a([M.bV(t,T.b2(H.a([L.aH("Build Strong Communities",A.ar(t,t,C.i,t,t,t,t,t,t,t,t,40,t,C.D,t,t,!0,t,t,t,t,t,t)),new T.aQ(C.ar,L.aH("Strengthen relationships with hundreds of thought leaders by working with your employees, customers, partners, and evangelists using our scalable platform.",A.ar(t,t,C.i,t,t,t,t,t,t,t,t,16,t,t,t,t,!0,t,t,t,t,t,t)),t),B.Zp(!1,new T.aQ(C.ae,L.aH("Request Demo",A.ar(t,t,C.uD,t,t,t,t,t,t,t,t,24,t,C.D,t,t,!0,t,t,t,t,t,t)),t),C.ap,C.i,t,t,t,t,t,t,t,t,t,t,t,new K.Hk(b),t,new X.bL(C.o,new K.bs(s,s,s,s)),t,t,t,t)],r),C.b7),t,t,t,t,t,a),new T.aQ(C.ar,U.nb("assets/images/main/hands.png",a),t)],r)},
 D:function(a){return new A.cE(new K.Hi(this),null)}}
 K.Hk.prototype={
 $0:function(){var t=u.z,s=V.it(new K.Hj(),null,t)
